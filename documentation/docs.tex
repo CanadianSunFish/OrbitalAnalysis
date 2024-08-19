@@ -1,0 +1,29 @@
+\documentclass{article}
+
+\title{Orbital Analysis Documentation}
+\author{Jeremy Hopkins}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\clearpage
+
+\section{Introduction}
+
+This project seeks to provide easy access to astronomical plots and animations. While the project is currently being worked on, the ultimate goal is to compile all valuable code and publish it as a Python pip package. All live astrophysical data is gathered using NASA SPICE Kernels. The associated Leap Second Kernels (LSK) may ocassionally need to be updated for maximum accuracy.
+
+\section{Goals}
+
+Beyond providing easy access to accurate astronomical visualizations, we seek to create a high fidelity astrophysical simulation software in Python. Currently, an N-Body simulation is being developed. This will be able to support large scale simulations ($n>10,000$), as well textured solar system simulations. 
+
+In simulating satellite orbits, an accurate launch simulation will be created. Lagrange point calculation and lagrange orbit simulation will also be implemented. This can hopefully serve as an educational tool for discussing the relavence of launch position on fuel requirements and escape velocity, as well as satellite positioning and placement for desired tasks.
+
+\section{Methods}
+In doing so, many factors have to be considered.
+Numerical round off, step size, and time or computational constraints are all of concern when working on large scale N-Body simulations. During rocket launch simulation, accurate air pressure, temperature, and density metrics are needed.
+
+\end{document}
